@@ -1,14 +1,16 @@
 package models.modelsimp;
 
 public class bricks {
-    int height;
-    int width;
-    double position;
+    private int height;
+    private int width;
+    private double pos_x;
+    private double pos_y;
 
-    public bricks(int height, int width , double position) {
+    public bricks(int length, int width , double pos_x , double pos_y) {
         this.height = height;
         this.width = width;
-        this.position = position;
+        this.pos_x = pos_x;
+        this.pos_y = pos_y;
     }
 
     public int getHeight() {
@@ -28,10 +30,18 @@ public class bricks {
     }
 
     public double getPosition() {
-        return position;
+        return pos_x;
     }
 
     public void setPosition(double position) {
-        this.position = position;
+        this.pos_x = position;
+    }
+
+    public double getPos_y() {
+        return pos_y;
+    }
+
+    public void setPos_y(double pos_y) {
+        this.pos_y = pos_y;
     }
 }
